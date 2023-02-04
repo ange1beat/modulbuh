@@ -6,7 +6,7 @@ export default function Header() {
     const [navbar, setNavbar] = useState(false);
 
     return (
-        <nav className="w-full bg-white text-white shadow fixed z-10">
+        <nav className="w-full bg-black text-white shadow fixed z-10">
             <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
                 <div>
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
@@ -15,7 +15,7 @@ export default function Header() {
                         </Link>
                         <div className="md:hidden">
                             <button
-                                className="p-2 text-black rounded-md outline-none focus:border-gray-400 focus:border"
+                                className="p-2 text-white rounded-md outline-none focus:border-gray-400 focus:border"
                                 onClick={() => setNavbar(!navbar)}
                             >
                                 {navbar ? (
@@ -58,16 +58,16 @@ export default function Header() {
                         }`}
                     >
                         <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-                            <li className="text-black hover:text-blue-400">
+                            <li className="text-white hover:text-blue-400">
                                 <a href="#mil">Military</a>
                             </li>
-                            <li className="text-black hover:text-blue-400">
+                            <li className="text-white hover:text-blue-400">
                                 <a href="#ser">Service</a>
                             </li>
-                            <li className="text-black hover:text-blue-400">
+                            <li className="text-white hover:text-blue-400">
                                 <a href="#gar">Garden</a>
                             </li>
-                            <li className="text-black hover:text-blue-400">
+                            <li className="text-white hover:text-blue-400">
                                 <a href="#aut">Auto</a>
                             </li>
                         </ul>

@@ -62,14 +62,14 @@ const Main = () => {
     return (
         <>
             <Header/>
-            <div className='flex flex-col bg-white scroll-smooth font-[sans-serif] overflow-hidden'>
+            <div className='flex flex-col bg-black scroll-smooth font-[sans-serif] overflow-hidden'>
                 <div className='mt-[100px] flex flex-col justify-center items-center'>
                     <img src={volt} alt='volt' className='w-[200px] mt-[70%] md:mt-[16%]' data-aos='fade'></img>
-                    <h1 className='text-gray-900' data-aos='fade'>Приближаем будущее каждый день</h1>
+                    <h1 className='font-bold text-white' data-aos='fade'>Приближаем будущее каждый день</h1>
                 </div>
                 <div className='mt-[100%] bg-gradient-to-r from-cyan-500 to-blue-500'>
                     <div className='p-3 flex flex-col justify-center items-center gap-7'>
-                        <h1 className='font-bold font-[sans-serif] text-[150%] mt-3 text-white'>Чем мы занимаемся?</h1>
+                        <h1 className='font-bold font-[system-ui] text-[150%] mt-3 text-white'>Чем мы занимаемся?</h1>
                           <div className='bg-white rounded-lg p-3 text-center shadow-blackBg'>
                             <span className='font-[sans-serif] text-[100%] text-center font-medium'>Основная цель - продвинуть электромодули, которые наша команда разработала с целью внедрения электротехнологий в повседневную жизнь</span>
                           </div>
@@ -78,7 +78,7 @@ const Main = () => {
                           </div>
                     </div>
                 </div>
-                <div className='bg-gradient-to-r from-green-500 to-lime-400'>
+                <div className='bg-black'>
                     <div className='p-3 flex flex-col justify-center items-center'>
                         <h1 id='mil' className='font-bold font-[sans-serif] text-[150%] text-white'>MILITARY</h1>
                         <div className='p-3 flex flex-col justify-center items-center gap-10'>
@@ -125,44 +125,41 @@ const Main = () => {
                     </div>
                     </div>
                 </div>
-                <div className='bg-gradient-to-r from-yellow-300 to-orange-200'>
-                    <h1 id='ser' className='font-bold font-[sans-serif] text-[150%] text-black text-center p-5'>SERVICE</h1>
-                    <div className='flex flex-col items-center justify-center'>
-                        <img src={ser1} alt='ser' className=''/>
-                        <img src={ser2} alt='ser' className=''/>
-                        <img src={ser3} alt='ser' className=''/>
-                        <img src={ser4} alt='ser' className=''/>
+                <div className='bg-black'>
+                    <h1 id='ser' className='font-bold font-[sans-serif] text-[150%] text-white text-center p-5'>SERVICE</h1>
+                    <div className='flex flex-col items-center justify-center gap-3'>
+                        <img src={ser1} alt='ser' className='w-[90%] rounded-lg'/>
+                        <img src={ser2} alt='ser' className='w-[90%] rounded-lg'/>
+                        <img src={ser3} alt='ser' className='w-[90%] rounded-lg'/>
+                        <img src={ser4} alt='ser' className='w-[90%] rounded-lg'/>
 
-                        <span className='font-[sans-serif] text-[140%] text-center font-bold pt-5 pb-5' data-aos='slide-left'>Volt Service создан для целей поддержания чистоты города. Электромодульные машины с искуственным интеллектом будут автоматически убирать улицы от пыли и грязи, а зимой смогут очищасть тратуары и дороги от снега, что сократит множество издержек</span>
+                        <span className='font-[sans-serif] text-[140%] text-justify font-bold pt-5 pb-5  bg-orange-200 text-black w-[90%] p-2' data-aos='slide-left'>Volt Service создан для целей поддержания чистоты и опрятности города. Электромодульные машины с новым продвинутым искуcственным интеллектом будут автоматически убирать улицы от пыли и грязи, а зимой смогут очищасть тратуары и дороги от снега, что сократит множество издержек</span>
                     </div>
                 </div>
                 <div className="">
-                    <div>
-                        <span id='gar' className='text-[150%] font-bold text-white text-center absolute ml-[39%] mt-[24%]'>Graden</span>
-                        <img src={grass} alt='grass' className=''/>
-                    </div>
-                    <div className='flex flex-col items-center justify-center'>
-                        <img src={grdn1} alt='ser' className=''/>
-                        <img src={grdn2} alt='ser' className=''/>
-                        <img src={grdn3} alt='ser' className=''/>
-                        <img src={grdn4} alt='ser' className=''/>
+                <h1 id='ser' className='font-bold font-[sans-serif] text-[150%] text-white text-center p-5'>GARDEN</h1>
+                    <div className='flex flex-col items-center justify-center gap-3'>
+                        <img src={grdn1} alt='ser' className='w-[90%] rounded-lg'/>
+                        <img src={grdn2} alt='ser' className='w-[90%] rounded-lg'/>
+                        <img src={grdn3} alt='ser' className='w-[90%] rounded-lg '/>
+                        <img src={grdn4} alt='ser' className='w-[90%] rounded-lg'/>
 
-                        <span className='font-[sans-serif] text-[140%] text-center font-bold pt-5 pb-5 p-2 bg-green-300' data-aos='slide-right'>Volt Garden создан для любителей газонов, помогает в автоматическом или ручном режиме эффективно косить широкие участки газонов, после работы его можно подзарядить с помощью электрозарядки</span>
+                        <span className='font-[system-ui] text-[140%] text-justify font-bold pt-5 pb-5 p-2 bg-green-300 w-[90%]' data-aos='slide-right'>Volt Garden создан для любителей газонов, помогает в автоматическом или ручном режиме эффективно косить широкие участки газонов, после работы его можно лего подзарядить с помощью электрозарядки</span>
                     </div>
                 </div>
                 <div className='bg-black'>
                     <h1 id='aut' className='font-bold font-[sans-serif] text-[150%] text-white text-center p-5'>AUTO</h1>
                     <div className='flex flex-col items-center justify-center gap-5'>
-                        <img src={avto3} alt='ser' className=''/>
-                        <img src={avto2} alt='ser' className=''/>
-                        <img src={avto1} alt='ser' className=''/>
-                        <img src={avto4} alt='ser' className=''/>
+                        <img src={avto3} alt='ser' className='w-[90%] rounded-lg'/>
+                        <img src={avto2} alt='ser' className='w-[90%] rounded-lg'/>
+                        <img src={avto1} alt='ser' className='w-[90%] rounded-lg'/>
+                        <img src={avto4} alt='ser' className='w-[90%] rounded-lg'/>
 
-                        <span className='font-[sans-serif] text-[140%] text-center font-bold pt-5 pb-5 text-white' data-aos='slide-left'>Volt Auto это автомобиль основанный на нашем электромодуле и электродвигателях, нужно лишь подзарядить и он готов для разъезда по городу. Дешевле аналогов, легкость смены конструкции дизайна делают эту модель более привлекательной для потребителя</span>
+                        <span className='font-[sans-serif] text-[120%] text-justify font-bold pt-5 pb-5 text-white w-[90%] p-4' data-aos='slide-left'>Volt Auto это автомобиль основанный на нашем электронном модуле и электродвигателях, нужно лишь подзарядить и он готов для разъезда по городу. Дешевле аналогов, легкость смены конструкции дизайна делают эту модель более привлекательной для потребителя</span>
                     </div>
                 </div>
-                <div className='flex flex-col justify-center items-center'>
-                    <span className='text-center text-[130%] pt-[50%] pb-[50%]'>Мы не просто делаем рендеры, мы делаем уже сейчас опытные образцы</span>
+                <div className='flex flex-col justify-center items-center bg-white'>
+                    <span className='text-center text-[130%] pt-[50%] pb-[50%] font-bold'>Мы не просто делаем рендеры, мы делаем уже сейчас опытные образцы</span>
                     <div className='flex flex-col gap-3 text-white text-center items-center'>
                         <video src={vid4} className='w-[100%] h-[100%] sm:w-screen' loop autoPlay muted/>
                     </div>
@@ -173,8 +170,11 @@ const Main = () => {
                         <video src={vid3} className='w-[100%] h-[100%] sm:w-screen' loop autoPlay muted/>
                     </div>
                 </div>
-                <span className='text-blue-400 font-bold text-center pt-[20%] pb-[20%] text-[170%]'>Команда</span>
-                <div className='flex flex-col sm:flex-row justify-center text-center text-black gap-10 mb-[10vh] sm:flex-wrap sm:w-[70%]'>
+                <div className='bg-white border-white'>
+                    <div className='flex items-center justify-center'>
+                <span className='text-blue-400 font-bold text-center pt-[20%] pb-[20%] text-[170%] bg-white'>Команда</span>
+                </div>
+                <div className='flex flex-col sm:flex-row justify-center text-center text-black gap-10 mb-[10vh] sm:flex-wrap sm:w-[70%] bg-white'>
                     <div className='flex flex-col gap-3 items-center' data-aos='fade'>
                         <img src={kulikov} alt='kulikov' className='rounded-full w-[30vh]'/>
                         <div className='font-bold sm:w-[300px]'>Вадим Геннадьевич Куликов</div>
@@ -208,16 +208,17 @@ const Main = () => {
                         <div className='w-[55%] sm:w-[230px]'>Студент 4го курса Финансового университета при Правительстве РФ, специализируется на веб-разработке, макроэкономике, цифровых финансах.</div>
                     </div>
                 </div>
-                <div className='flex flex-row justify-center items-center gap-5 p-5'>
+                <div className='flex flex-row justify-center items-center gap-5 p-5 bg-white'>
                     <a href='https://t.me/fakelEl' className='w-[15%]'><img src={telega} alt='telega'/></a>
                     <a href='https://youtube.com/watch?v=jK46CT5L-Cs&feature=share' className='w-[15%]'><img src={youtube} alt='telega'/></a>
                 </div>
-                <div className='flex flex-col justify-center items-center gap-5 p-5'>
+                <div className='flex flex-col justify-center items-center gap-5 p-5 bg-white'>
                     <span>anton-troickii@mail.ru</span>
                     <span>+7 916 971 5291</span>
                 </div>
-                <div className='pt-5 pb-5'>
-                    <a href='https://qiwi.com/p/79686829745'><div className='w-[90%] border-solid border-4 rounded-tl-lg rounded-br-lg border-black text-center justify-center m-auto sm:text-[40px] text-[110%] p-5 cursor-pointer font-bold hover:bg-black hover:text-white'>Инвестировать</div></a>
+                <div className='pt-5 pb-5 bg-white'>
+                    <a href='https://www.tinkoff.ru/cf/AAJbJSPVF2u'><div className='w-[90%] border-solid border-4 rounded-tl-lg rounded-br-lg border-black text-center justify-center m-auto sm:text-[40px] text-[110%] p-5 cursor-pointer font-bold hover:bg-black hover:text-white'>Инвестировать</div></a>
+                </div>
                 </div>
             </div>
         </>

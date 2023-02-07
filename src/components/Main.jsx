@@ -52,6 +52,8 @@ import avto4 from './images/avto4.jpg'
 import telega from './images/telega.png'
 import youtube from './images/youtube.png'
 
+import roadmap from './images/roadmapv1.png'
+
 
 const Main = () => {
 
@@ -67,19 +69,19 @@ const Main = () => {
                     <img src={volt} alt='volt' className='w-[200px] mt-[70%] md:mt-[16%]' data-aos='fade'></img>
                     <h1 className='font-bold text-white' data-aos='fade'>Приближаем будущее каждый день</h1>
                 </div>
-                <div className='mt-[100%] bg-gradient-to-r from-cyan-500 to-blue-500'>
+                <div className='mt-[100%] sm:mt-[28%] bg-gradient-to-r from-cyan-500 to-blue-500'>
                     <div className='p-3 flex flex-col justify-center items-center gap-7'>
                         <h1 className='font-bold font-[system-ui] text-[150%] mt-3 text-white'>Чем мы занимаемся?</h1>
-                          <div className='bg-white rounded-lg p-3 text-center shadow-blackBg'>
-                            <span className='font-[sans-serif] text-[100%] text-center font-medium'>Основная цель - продвинуть электромодули, которые наша команда разработала с целью внедрения электротехнологий в повседневную жизнь</span>
+                          <div className='bg-white rounded-lg p-3 text-center shadow-blackBg sm:w-[40%]'>
+                            <span className='font-[sans-serif] text-[100%] sm:text-[150%] text-center font-bold'>Основная цель - продвинуть электромодули, которые наша команда разработала с целью внедрения электротехнологий в повседневную жизнь</span>
                           </div>
-                          <div className='bg-white rounded-lg p-3 text-center mb-3 shadow-blackBg'>
-                            <span className='font-[sans-serif] text-[100%] text-center mt-[30px] font-medium'>Электромодульные платформы имеют свои неоспоримые преимущества, которые проявляют себя по-разному в зависимости от применения технологии. Именно поэтому мы проанализировали сферы, где уже сейчас можно и нужно применять данную технологию</span>
+                          <div className='bg-white rounded-lg p-3 text-center mb-3 shadow-blackBg sm:w-[40%]'>
+                            <span className='font-[sans-serif] text-[100%] sm:text-[150%] text-center mt-[30px] font-bold'>Электромодульные платформы имеют свои неоспоримые преимущества, которые проявляют себя по-разному в зависимости от применения технологии. Именно поэтому мы проанализировали сферы, где уже сейчас можно и нужно применять данную технологию</span>
                           </div>
                     </div>
                 </div>
-                <div className='bg-black'>
-                    <div className='p-3 flex flex-col justify-center items-center'>
+                <div className='bg-black sm:flex sm:justify-center'>
+                    <div className='p-3 flex flex-col justify-center items-center sm:w-[50%]'>
                         <h1 id='mil' className='font-bold font-[sans-serif] text-[150%] text-white'>MILITARY</h1>
                         <div className='p-3 flex flex-col justify-center items-center gap-10'>
                             <div className='flex flex-col gap-3 bg-white p-3 rounded-lg shadow-blackBg' data-aos='fade-up'>
@@ -125,9 +127,9 @@ const Main = () => {
                     </div>
                     </div>
                 </div>
-                <div className='bg-black'>
+                <div className='bg-black sm:flex sm:justify-center'>
+                    <div className='flex flex-col items-center justify-center gap-3 sm:w-[50%]'>
                     <h1 id='ser' className='font-bold font-[sans-serif] text-[150%] text-white text-center p-5'>SERVICE</h1>
-                    <div className='flex flex-col items-center justify-center gap-3'>
                         <img src={ser1} alt='ser' className='w-[90%] rounded-lg'/>
                         <img src={ser2} alt='ser' className='w-[90%] rounded-lg'/>
                         <img src={ser3} alt='ser' className='w-[90%] rounded-lg'/>
@@ -136,9 +138,9 @@ const Main = () => {
                         <span className='font-[sans-serif] text-[140%] text-justify font-bold pt-5 pb-5  bg-orange-200 text-black w-[90%] p-2' data-aos='slide-left'>Volt Service создан для целей поддержания чистоты и опрятности города. Электромодульные машины с новым продвинутым искуcственным интеллектом будут автоматически убирать улицы от пыли и грязи, а зимой смогут очищасть тратуары и дороги от снега, что сократит множество издержек</span>
                     </div>
                 </div>
-                <div className="">
-                <h1 id='ser' className='font-bold font-[sans-serif] text-[150%] text-white text-center p-5'>GARDEN</h1>
-                    <div className='flex flex-col items-center justify-center gap-3'>
+                <div className="sm:flex sm:justify-center">
+                    <div className='flex flex-col items-center justify-center gap-3 sm:w-[50%]'>
+                    <h1 id='gar' className='font-bold font-[sans-serif] text-[150%] text-white text-center p-5'>GARDEN</h1>
                         <img src={grdn1} alt='ser' className='w-[90%] rounded-lg'/>
                         <img src={grdn2} alt='ser' className='w-[90%] rounded-lg'/>
                         <img src={grdn3} alt='ser' className='w-[90%] rounded-lg '/>
@@ -147,15 +149,20 @@ const Main = () => {
                         <span className='font-[system-ui] text-[140%] text-justify font-bold pt-5 pb-5 p-2 bg-green-300 w-[90%]' data-aos='slide-right'>Volt Garden создан для любителей газонов, помогает в автоматическом или ручном режиме эффективно косить широкие участки газонов, после работы его можно лего подзарядить с помощью электрозарядки</span>
                     </div>
                 </div>
-                <div className='bg-black'>
+                <div className='bg-black sm:flex sm:justify-center'>
+                    <div className='flex flex-col items-center justify-center gap-5 sm:w-[50%]'>
                     <h1 id='aut' className='font-bold font-[sans-serif] text-[150%] text-white text-center p-5'>AUTO</h1>
-                    <div className='flex flex-col items-center justify-center gap-5'>
                         <img src={avto3} alt='ser' className='w-[90%] rounded-lg'/>
                         <img src={avto2} alt='ser' className='w-[90%] rounded-lg'/>
                         <img src={avto1} alt='ser' className='w-[90%] rounded-lg'/>
                         <img src={avto4} alt='ser' className='w-[90%] rounded-lg'/>
 
                         <span className='font-[sans-serif] text-[120%] text-justify font-bold pt-5 pb-5 text-white w-[90%] p-4' data-aos='slide-left'>Volt Auto это автомобиль основанный на нашем электронном модуле и электродвигателях, нужно лишь подзарядить и он готов для разъезда по городу. Дешевле аналогов, легкость смены конструкции дизайна делают эту модель более привлекательной для потребителя</span>
+                    </div>
+                </div>
+                <div className='bg-black sm:flex sm:justify-center'>
+                    <div className='flex flex-col items-center justify-center gap-5 sm:w-[50%] pt-5 pb-5'>
+                        <img src={roadmap} alt='roadmap' className='w-[90%]'/>
                     </div>
                 </div>
                 <div className='flex flex-col justify-center items-center bg-white'>
@@ -174,7 +181,7 @@ const Main = () => {
                     <div className='flex items-center justify-center'>
                 <span className='text-blue-400 font-bold text-center pt-[20%] pb-[20%] text-[170%] bg-white'>Команда</span>
                 </div>
-                <div className='flex flex-col sm:flex-row justify-center text-center text-black gap-10 mb-[10vh] sm:flex-wrap sm:w-[70%] bg-white'>
+                <div className='flex flex-col sm:flex-row justify-center text-center text-black gap-10 mb-[10vh] sm:flex-wrap  bg-white'>
                     <div className='flex flex-col gap-3 items-center' data-aos='fade'>
                         <img src={kulikov} alt='kulikov' className='rounded-full w-[30vh]'/>
                         <div className='font-bold sm:w-[300px]'>Вадим Геннадьевич Куликов</div>
@@ -209,15 +216,15 @@ const Main = () => {
                     </div>
                 </div>
                 <div className='flex flex-row justify-center items-center gap-5 p-5 bg-white'>
-                    <a href='https://t.me/fakelEl' className='w-[15%]'><img src={telega} alt='telega'/></a>
-                    <a href='https://youtube.com/watch?v=jK46CT5L-Cs&feature=share' className='w-[15%]'><img src={youtube} alt='telega'/></a>
+                    <a href='https://t.me/fakelEl' className='w-[15%] sm:w-[5%]'><img src={telega} alt='telega'/></a>
+                    <a href='https://youtube.com/watch?v=jK46CT5L-Cs&feature=share' className='w-[15%] sm:w-[5%]'><img src={youtube} alt='telega'/></a>
                 </div>
-                <div className='flex flex-col justify-center items-center gap-5 p-5 bg-white'>
+                <div className='flex flex-col justify-center items-center gap-5 p-5 bg-white w-[100%]'>
                     <span>anton-troickii@mail.ru</span>
-                    <span>+7 916 971 5291</span>
+                    <span>+79169715291</span>
                 </div>
                 <div className='pt-5 pb-5 bg-white'>
-                    <a href='https://www.tinkoff.ru/cf/AAJbJSPVF2u'><div className='w-[90%] border-solid border-4 rounded-tl-lg rounded-br-lg border-black text-center justify-center m-auto sm:text-[40px] text-[110%] p-5 cursor-pointer font-bold hover:bg-black hover:text-white'>Инвестировать</div></a>
+                    <a href='https://www.tinkoff.ru/cf/AAJbJSPVF2u'><div className='w-[90%] sm:w-[30%] border-solid border-4 rounded-tl-lg rounded-br-lg border-black text-center justify-center m-auto sm:text-[40px] text-[110%] p-5 cursor-pointer font-bold hover:bg-black hover:text-white'>Инвестировать</div></a>
                 </div>
                 </div>
             </div>

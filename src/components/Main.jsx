@@ -3,9 +3,11 @@ import { useEffect } from 'react';
 import Header from './Header';
 
 import posting from './images/posting.gif'
+import posting2 from './images/posting2.gif'
 import howitworks from './images/howitworks.png'
 import ava from './images/ava.png'
 import ava2 from './images/ava2.png'
+import ava3 from './images/ava3.png'
 import last from './images/last.png'
 
 const Main = () => {
@@ -17,22 +19,24 @@ const Main = () => {
     return (
         <>
             <Header/>
-            <div className='scroll-smooth flex flex-col justify-center items-center overflow-hidden bg-[#231b19] font-mono'>
+            <div className='scroll-smooth flex flex-col justify-center items-center overflow-hidden bg-gradient-to-b from-[#231b19] to-black font-mono'>
                 <div className='pt-[120px] flex flex-col justify-center items-center'>
-                    <div className='text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-b from-rose-500 to-rose-400'>
+                    <div className='text-4xl sm:text-[500%] font-extrabold text-transparent bg-clip-text bg-gradient-to-b from-rose-500 to-rose-400 sm:pb-9'>
                         Автоматизируй
                     </div>
-                    <div className='text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-b from-rose-400 to-rose-300'>
-                        Оптимизируй
-                    </div>
-                    <div className='text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-b from-rose-300 to-orange-400'>
+                    <div className='text-4xl sm:text-[500%] font-extrabold text-transparent bg-clip-text bg-gradient-to-b from-rose-300 to-orange-400 sm:pb-9'>
                         Актуализируй
                     </div>
-                    <div className='text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-b from-orange-400 to-orange-300'>
+                    <div className='text-4xl sm:text-[500%] font-extrabold text-transparent bg-clip-text bg-gradient-to-b from-rose-400 to-rose-300 sm:pb-9'>
+                        Оптимизируй
+                    </div>
+                    <div className='text-4xl sm:text-[500%] font-extrabold text-transparent bg-clip-text bg-gradient-to-b from-orange-400 to-orange-300 sm:pb-9'>
                         Контент
                     </div>
-                    <div>
-                        <img src={posting} className='p-6 pt-12'/>
+                    <div className='w-[110%]'>
+                        <img src={posting} className='w-[150%] hidden p-6 pt-12 sm:block'/>
+
+                        <img src={posting2} className='sm:hidden pt-12 pb-6'/>
                     </div>
 
                         <div className='text-4xl font-bold text-white pb-9 pt-3'>
@@ -42,7 +46,7 @@ const Main = () => {
 
 
                         <div className='flex flex-col justify-center items-center w-[100%] gap-9'>
-                            <div className='bg-gradient-to-r from-zinc-700 rounded-lg w-[90%] flex flex-col'>
+                            <div className='bg-gradient-to-r from-zinc-700 rounded-lg w-[90%] sm:w-[60%] flex flex-col'>
                                 <div className='p-4 flex flex-col gap-3'>
                                     <div className='text-orange-300 font-bold text-3xl'>
                                         Автоматизация
@@ -52,7 +56,7 @@ const Main = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className='bg-gradient-to-r from-zinc-700 rounded-lg w-[90%] flex flex-col'>
+                            <div className='bg-gradient-to-r from-zinc-700 rounded-lg w-[90%] sm:w-[60%] flex flex-col'>
                                 <div className='p-4 flex flex-col gap-3'>
                                     <div className='text-orange-500 font-bold text-3xl'>
                                         Оптимизация
@@ -62,7 +66,7 @@ const Main = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className='bg-gradient-to-r from-zinc-700 rounded-lg w-[90%] flex flex-col'>
+                            <div className='bg-gradient-to-r from-zinc-700 rounded-lg w-[90%]  sm:w-[60%] flex flex-col'>
                                 <div className='p-4 flex flex-col gap-3'>
                                     <div className='text-rose-500 font-bold text-3xl'>
                                         Актуализация
@@ -77,8 +81,8 @@ const Main = () => {
                         <div className='text-4xl font-bold text-white pb-8 pt-8'>
                             Как это работает?
                         </div>
-                        <div>
-                            <img src={howitworks}/>
+                        <div className='w-[100%] flex flex-col items-center justify-center'>
+                            <img src={howitworks} className='sm:w-[50%]'/>
                         </div>
 
                         <div className='text-4xl font-bold text-white p-8'>
@@ -89,7 +93,7 @@ const Main = () => {
                             <div className='flex flex-col justify-center items-center w-[80%]'>
                                 <img src={ava} className='p-8 pb-3'/>
                                 <div className='text-white font-bold'>
-                                    Victor "Frontrunner"
+                                    Victor "frontrunner"
                                 </div>
                                 <div className='text-white w-[90%] text-center'>
                                     Founder
@@ -99,10 +103,20 @@ const Main = () => {
                             <div className='flex flex-col justify-center items-center w-[80%]'>
                                 <img src={ava2} className='p-8 pb-3'/>
                                 <div className='text-white font-bold'>
-                                    Mihkail "loveskaif"
+                                    Andrey "Slon"
                                 </div>
                                 <div className='text-white w-[90%] text-center'>
-                                    Co-Founder
+                                    Java Developer
+                                </div>
+                            </div>
+
+                            <div className='flex flex-col justify-center items-center w-[80%]'>
+                                <img src={ava3} className='p-8 pb-3'/>
+                                <div className='text-white font-bold'>
+                                    Artem "Adonis"
+                                </div>
+                                <div className='text-white w-[90%] text-center'>
+                                    Bizdev Sales
                                 </div>
                             </div>
 

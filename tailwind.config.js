@@ -4,6 +4,10 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
+    fontFamily: {
+      mono: ['Montserrat'],
+      sans: ['MontserratBold']
+    },
     extend: {
       boxShadow: {
         'blackBg': '3px 3px 0px 0px black'
@@ -27,3 +31,4 @@ module.exports = {
   },
   plugins: [],
 }
+

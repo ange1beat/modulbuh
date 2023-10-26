@@ -10,10 +10,10 @@ export default function Header() {
                 <div className="flex justify-center items-center">
                     <div className="flex flex-row justify-center items-center md:gap-[150%] gap-9">
                         <Link to="/">
-                             <h2 className="text-xl font-bold text-white">Content</h2> 
+                             <h2 className="text-xl font-bold text-white">CNTNT</h2> 
                         </Link>
-                        <img src={logo} className='w-[60px] p-2'/>
-                        <a href='https://t.me/contentbotoff'><h2 className="text-xl font-bold text-white">Telegram</h2></a>
+                        <img src={logo} className='w-[80px] p-2'/>
+                        <a href='https://t.me/contentbotoff'><h2 className="text-xl font-bold text-white">TLGRM</h2></a>
                     </div>
                 </div>
             </div>

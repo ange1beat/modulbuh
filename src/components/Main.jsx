@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import Header from './Header';
 
 import posting from './images/posting.gif'
-import posting2 from './images/posting2.gif'
+import posting2 from './images/posting2.png'
 import howitworks from './images/howitworks.png'
 import ava from './images/ava.png'
 import ava2 from './images/ava2.png'
@@ -19,24 +19,23 @@ const Main = () => {
     return (
         <>
             <Header/>
-            <div className='scroll-smooth flex flex-col justify-center items-center overflow-hidden bg-gradient-to-b from-[#231b19] to-black font-mono'>
+            <div className='scroll-smooth flex flex-col justify-center items-center overflow-hidden bg-black font-mono'>
                 <div className='pt-[120px] flex flex-col justify-center items-center'>
-                    <div className='text-4xl sm:text-[500%] font-extrabold text-transparent bg-clip-text bg-gradient-to-b from-rose-500 to-rose-400 sm:pb-9'>
-                        Автоматизируй
+                    <div className='text-4xl sm:text-[500%] font-extrabold text-transparent bg-clip-text bg-gradient-to-b from-purple-500 to-indigo-400 sm:pb-12 sm:p-3'>
+                        АВТОМАТИЗИРУЙ
                     </div>
-                    <div className='text-4xl sm:text-[500%] font-extrabold text-transparent bg-clip-text bg-gradient-to-b from-rose-300 to-orange-400 sm:pb-9'>
-                        Актуализируй
+                    <div className='text-4xl sm:text-[500%] font-extrabold text-transparent bg-clip-text bg-gradient-to-b from-purple-300 to-indigo-400 sm:pb-12 sm:p-3'>
+                        АКТУАЛИЗИРУЙ
                     </div>
-                    <div className='text-4xl sm:text-[500%] font-extrabold text-transparent bg-clip-text bg-gradient-to-b from-rose-400 to-rose-300 sm:pb-9'>
-                        Оптимизируй
+                    <div className='text-4xl sm:text-[500%] font-extrabold text-transparent bg-clip-text bg-gradient-to-b from-purple-400 to-indigo-300 sm:pb-12 sm:p-3'>
+                        ОПТИМИЗИРУЙ
                     </div>
-                    <div className='text-4xl sm:text-[500%] font-extrabold text-transparent bg-clip-text bg-gradient-to-b from-orange-400 to-orange-300 sm:pb-9'>
-                        Контент
+                    <div className='text-4xl sm:text-[500%] font-extrabold text-transparent bg-clip-text bg-gradient-to-b from-purple-400 to-indigo-300 sm:pb-12 sm:p-3'>
+                        КОНТЕНТ
                     </div>
-                    <div className='w-[110%]'>
-                        <img src={posting} className='w-[150%] hidden p-6 pt-12 sm:block'/>
+                    <div className='w-[100%] flex justify-center items-center'>
 
-                        <img src={posting2} className='sm:hidden pt-12 pb-6'/>
+                        <img src={posting2} className=' pt-12 pb-6'/>
                     </div>
 
                         <div className='text-4xl font-bold text-white pb-9 pt-3'>
@@ -123,7 +122,7 @@ const Main = () => {
                         </div>
 
                         <div className='pt-24 pb-20'>
-                           <a href='https://t.me/contentbotoff'><div className=' text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-orange-300 border-solid border-2 rounded-lg border-orange-400 text-center justify-center text-2xl pl-10 pr-10 p-3 cursor-pointer font-bold hover:bg-white hover:text-white hover:border-white'>Telegram Bot</div></a>
+                           <a href='https://t.me/contentbotoff'><div className=' text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-indigo-300 border-solid border-2 rounded-lg border-purple-400 text-center justify-center text-2xl pl-10 pr-10 p-3 cursor-pointer font-bold hover:bg-white hover:text-white hover:border-white'>Telegram Bot</div></a>
                         </div>
 
                         <div>
